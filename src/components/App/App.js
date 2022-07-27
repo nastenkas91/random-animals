@@ -27,7 +27,7 @@ function App() {
   }
 
   function handleBackClick() {
-    navigate('/', { replace: true });
+    navigate('/random-animals', { replace: true });
     setImage('');
   }
 
@@ -56,12 +56,12 @@ function App() {
       <div className="app__page-wrapper">
         <Routes>
           <Route
-            path='/'
+            path='random-animals'
             element={<Main />}
           />
 
           <Route
-            path='cats'
+            path='/cats'
             element={<PhotoPage
               image={image}
               onNextBtnClick={handleNextCat}
@@ -74,7 +74,7 @@ function App() {
           />
 
           <Route
-            path='dogs'
+            path='/dogs'
             element={<PhotoPage
               image={image}
               onNextBtnClick={handleNextDog}
@@ -87,7 +87,7 @@ function App() {
           />
 
           <Route
-            path='foxes'
+            path='/foxes'
             element={<PhotoPage
               image={image}
               onNextBtnClick={handleNextFox}
