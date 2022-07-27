@@ -1,0 +1,29 @@
+.next-btn {
+  background: -webkit-linear-gradient(#78ABA9, #ED706F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  min-width: 50px;
+  max-width: 80%;
+  min-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  transition: scale 2s ease;
+}
+
+.next-btn:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 550px){
+  .next-btn {
+    margin-bottom: 10px;
+    min-width: 30px;
+    font-size: 30px;
+  }
+}
