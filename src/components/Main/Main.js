@@ -9,7 +9,7 @@ function Main() {
       <ul className="animals-list">
           <li className='animals-list__item'>
             <NavLink
-              to='/cats'
+              to='/random-animals/cats'
             className='animals-list__link'>
               Котики
             </NavLink>
@@ -17,7 +17,7 @@ function Main() {
 
           <li className='animals-list__item'>
             <NavLink
-              to='/dogs'
+              to='/random-animals/dogs'
               className='animals-list__link'>
               Песики
             </NavLink>
@@ -25,7 +25,7 @@ function Main() {
 
           <li className='animals-list__item'>
             <NavLink
-              to='/foxes'
+              to='/random-animals/foxes'
               className='animals-list__link'>
               Лисички
             </NavLink>

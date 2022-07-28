@@ -56,12 +56,12 @@ function App() {
       <div className="app__page-wrapper">
         <Routes>
           <Route
-            path='random-animals'
+            exact path='random-animals'
             element={<Main />}
           />
 
           <Route
-            path='/cats'
+            path='/random-animals/cats'
             element={<PhotoPage
               image={image}
               onNextBtnClick={handleNextCat}
@@ -74,7 +74,7 @@ function App() {
           />
 
           <Route
-            path='/dogs'
+            path='/random-animals/dogs'
             element={<PhotoPage
               image={image}
               onNextBtnClick={handleNextDog}
@@ -87,7 +87,7 @@ function App() {
           />
 
           <Route
-            path='/foxes'
+            path='/random-animals/foxes'
             element={<PhotoPage
               image={image}
               onNextBtnClick={handleNextFox}
